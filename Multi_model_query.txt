@@ -1,0 +1,37 @@
+1. hospitals count in Each State
+FOR h IN Hospitals
+    COLLECT state = h.state_name WITH COUNT INTO total
+    SORT total DESC
+    RETURN {
+    State : state,
+    "Total state" : total
+    }
+    
+2. Total Primary Health Centre in Each State 
+
+FOR h IN Hospitals
+    FILTER h.facility_type == 'Primary Health Centre'
+    COLLECT state = h.state_name WITH COUNT INTO total
+    RETURN {
+    State : state,
+    "Total state" : total
+    }
+3.Location Of hospitals in Uttar Pradesh
+
+for location in Hospitals
+    FILTER location.state_name == "Uttar Pradesh"
+    RETURN GEO_POINT(location.X,location.Y)
+
+4. Hotels near by Medical colleges Hospital in each city
+
+FOR hos IN Hospitals
+    FILTER hos.facility_type == "Medical Colleges Hospital"
+    FOR hotel IN hotels
+        FILTER hotel.state == hos.state_name
+        FILTER hotel.hotel_star_rating != null
+        FILTER hotel.address != null
+        RETURN {
+            "District" : hos.district_name,
+            "Room Type" : hotel.room_type,
+            "Hotel Address" : hotel.address
+            }
