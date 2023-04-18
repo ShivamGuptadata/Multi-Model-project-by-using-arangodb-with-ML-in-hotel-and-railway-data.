@@ -1,0 +1,33 @@
+#HOTEL COUNT IN A PARTICULAR CITY
+for hotel in Hotels
+COLLECT city=hotel.city with count into no
+Sort no DESC
+return {"city":city , "number": no
+}
+
+
+#FROM ABOVE DATA WE CHOOSE NEW DELHI as it has max hotels
+for hotel in Hotels
+filter hotel.city=='new delhi'
+filter DISTANCE(28.556160,77.100281,hotel.longitude,hotel.latitude) 
+return Geo_Point(hotel.longitude,hotel.latitude)     #all the hotels in delhi are on graph
+
+
+#sorting hotels nearest to delhi airport
+for hotel in Hotels
+filter hotel.city=='new delhi'
+SORT DISTANCE(hotel.longitude,hotel.latitude,28.556160,77.100281)
+return hotel
+
+
+#mapping all the 5 star hotels in India
+for hotel in Hotels
+filter hotel.hotel_star_rating=='5-star hotel' or hotel.hotel_star_rating=='5 stars'
+return Geo_Point(hotel.longitude,hotel.latitude)
+
+
+#5star hotels with user reviews greater than 8.5 as the dataset has both 5-star and 5 stars
+for hotel in Hotels
+filter hotel.hotel_star_rating=='5-star hotel' or hotel.hotel_star_rating=='5 stars'
+filter hotel.site_review_rating>=8.5
+return Geo_Point(hotel.longitude,hotel.latitude)  
