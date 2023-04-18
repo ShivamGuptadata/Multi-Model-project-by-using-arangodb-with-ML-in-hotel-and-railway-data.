@@ -1,0 +1,5 @@
+1 Total no.of hotels in particular city
+2 Total no. of hotel in city at particular ratings
+3 Those hotels which have of maximum no. rooms in particular city
+4 The total no. of famous hotel chains
+5.The  no. of Hotels in city whith their graphical Representation
