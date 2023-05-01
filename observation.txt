@@ -1,5 +1,14 @@
-1 Total no.of hotels in particular city
-2 Total no. of hotel in city at particular ratings
-3 Those hotels which have of maximum no. rooms in particular city
-4 The total no. of famous hotel chains
+1. Total no.of hotels in particular city
+2. Total no. of hotel in city at particular ratings
+3. Those hotels which have of maximum no. rooms in particular city
+4. The total no. of famous hotel chains
 5.The  no. of Hotels in city whith their graphical Representation
+6. Returning those hotels which provide free private parking
+7. Those places whose have parking facilities and available in mumbai with high rating and 24 hrs available
+8. Filterout those Hotels which have Mountain view 
+9. Filter Outh those cities which only availablle 24 hrs
+10. Returning railway datas
+11. finding those travelling place with nearby station
+12. check  b/w cities and unique places
+13. checking how many hotels present in particular city
+14. Ranking Hotels in particular city 
