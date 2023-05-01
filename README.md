@@ -42,13 +42,22 @@ We use  n Query Model that filter out nearby restaurant , Hospitals and Railway 
 <li>We Analyze which model is best for hotel features classifier by using Grid search CV.</li>
 <li> After Analysis <b> Decision Forest Classifier </b> is the best classifier. It is given <b>87.92%</b> of accuracy score.</li>
 <li> Graph related to Accuracy score and number of estimator.</li>
-(https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/aa.png)
 
 
 
-<li><b>RESULT</b> Data frame of best Hotel facility.</li>
-https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/result.jpg
+<a href="#"><img width="100%" height="500px" margin = 20px src="https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/aa.png" height="100px"/><b>RESULT</b> Data frame of best Hotel facility. </a>
+
+<a href="#"><img width="100%" height="500px" margin = 20px src="https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/result.jpg" height="100px"/><b>RESULT</b> Data frame of best Hotel facility. </a>
   
 </ol>
+
+</br>
+</br>
+</br>
+</br>
+
+<h1 align="center"> Conclusion </h1>
+## We have created a hotel recommendation system based on customer preferences in this data science assignment adding a railway dataset to see the connectivity of railways along with it, the Wikidata as loaded into ArangoDB and a graph was created that represents the relationships between entities, such as people, places, and things. AQL was used to query the graph.
+This recommendation system eases out the process of finding hotels manually and saves time and   enable user for more effictively based on their preference 
 
 
