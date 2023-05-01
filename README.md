@@ -42,7 +42,7 @@ We use  n Query Model that filter out nearby restaurant , Hospitals and Railway 
 <li>We Analyze which model is best for hotel features classifier by using Grid search CV.</li>
 <li> After Analysis <b> Decision Forest Classifier </b> is the best classifier. It is given <b>87.92%</b> of accuracy score.</li>
 <li> Graph related to Accuracy score and number of estimator.</li>
-<h>https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/aa.png</h>
+![](https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/aa.png)
 
 
 
