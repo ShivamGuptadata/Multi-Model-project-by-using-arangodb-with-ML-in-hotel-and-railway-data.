@@ -39,7 +39,7 @@ We use  n Query Model that filter out nearby restaurant , Hospitals and Railway 
 <li> Form a Graph between the attribute of different dataset and make an relationship between them </li>
 <li> Use Geo_Location to integrate queries with realtime map</li>
 <li>ArangoDb has an feature of arango Search through which we explore an useful insight from descriptive data  </li>
-<li>Create an ML Model that on the basis of Classification Algorithms to Predict which suitable nearby Hotels   </li>
+  
 </ol>
 
 
