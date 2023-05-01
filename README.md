@@ -47,7 +47,7 @@ We use  n Query Model that filter out nearby restaurant , Hospitals and Railway 
 
 
 <li><b>RESULT</b> Data frame of best Hotel facility.</li>
-
+https://github.com/ShivamGuptadata/Multi_Model_Database_Task-1/blob/main/result.jpg
   
 </ol>
 
