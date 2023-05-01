@@ -39,6 +39,14 @@ We use  n Query Model that filter out nearby restaurant , Hospitals and Railway 
 <li> Form a Graph between the attribute of different dataset and make an relationship between them </li>
 <li> Use Geo_Location to integrate queries with realtime map</li>
 <li>ArangoDb has an feature of arango Search through which we explore an useful insight from descriptive data  </li>
+<li>We Analyze which model is best for hotel features classifier by using Grid search CV.</li>
+<li> After Analysis <b> Decision Forest Classifier </b> is the best classifier. It is given <b>87.92%</b> of accuracy score.</li>
+<li> Graph related to Accuracy score and number of estimator.</li>
+
+
+
+<li><b>RESULT</b> Data frame of best Hotel facility.</li>
+
   
 </ol>
 
