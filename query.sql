@@ -51,12 +51,14 @@ FOR h IN hotels
   RETURN { recommendations : recommendations }
   
   
+  //Arango Search 
+  
   //returning those hotels which provide free private parking
   FOR doc IN perfectView
    SEARCH PHRASE(doc.hotel_description, 'Free private parking','text_en'
   ) 
   RETURN 
-  GEO_POINT(doc.longitude,doc.latitude)
+  GEO_POINT(doc.longitude,doc.latitude) 
   
   
   //those places whose have parking facilities and available in mumbai with high rating and 24 hrs available
@@ -91,7 +93,7 @@ FOR h IN hotels
    }
    
    
-   //Filter Outh those cities which 
+   //Filter Outh those cities which availablle 24 hrs
    FOR doc IN perfectView
 
    SEARCH ANALYZER( starts_with(doc.hotel_facilities, '24'), 'text_en' ) 
